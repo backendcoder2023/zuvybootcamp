@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+  <title>Flex Box Task 2</title>
+  <style>
+    /* Write your CSS here*/
+    #main {
+            background-color: hsl(204, 43%, 93%);
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: 'Karla', sans-serif;
+
+        }
+
+
+
+        #second {
+            background-color: white;
+        }
+
+
+
+        #container {
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: rgb(233, 229, 229);
+        }
+
+
+
+        .contain-plan {
+            background-color: hsl(179, 62%, 43%);
+            height: 13.7rem;
+            width: 17.5rem;
+            text-align: center;
+
+        }
+
+
+
+        .sign-button {
+            background-color: hsl(71, 73%, 54%);
+            width: 13.8rem;
+            height: 2.5rem;
+            margin-top: 0.8rem;
+            color: white;
+            font-size: 0.8rem;
+            border-radius: 0.6rem;
+            border: none;
+        }
+
+
+
+        #plain-text {
+            padding-left: 1.5rem;
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            font-size: 0.8rem;
+            color: rgb(194, 191, 191);
+        }
+
+
+
+        #second-contain {
+            background-color: hsl(180, 61%, 46%);
+        }
+
+
+
+        .text {
+            list-style: none;
+            text-align: justify;
+            font-size: 0.7rem;
+            display: flex;
+            gap: 0.3rem;
+            flex-direction: column;
+        }
+
+
+
+        h1 {
+            color: hsl(179, 62%, 43%);
+            font-size: 1.2rem;
+        }
+
+
+        .second-paragraph1 {
+            color: hsl(72, 51%, 61%);
+        }
+
+
+
+        ul>p {
+            font-size: 1rem;
+        }
+
+
+
+        ul>li {
+            color: rgb(200, 206, 210);
+        }
+
+
+
+        #text2 {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+
+
+        span {
+            font-size: 2rem;
+            color: white;
+        }
+
+
+        @media(max-width:376px) {
+            br {
+                display: none;
+            }
+            #main{
+                height: auto;
+            }
+
+            #second{
+                margin: 2.3rem;
+                height: auto;
+            }
+            #plain-text {
+                font-size: 0.75rem;
+                padding: 1.5rem;
+
+            }
+            .second-paragraph1{
+                font-size: 1rem;
+            }
+        }
+
+
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div id="second">
+        <div id="plain-text">
+            <h1>Join our community</h1>
+            <p class="second-paragraph1">30-day, hassle-free money back guarantee</p>
+            <p>Gain access to our full library of tutorials along with expert code reviews.<br>
+                Perfect for any developers who are serious about honing their skills.</p>
+        </div>
+
+
+        <div id="container">
+            <div class="contain-plan">
+                <ul class="text" id="text2">
+                    <p>Monthly Subscription</p>
+                    <li> <span>&dollar;29</span> per month</li>
+                    <li>Full access for less than &dollar;1 a day</li>
+                </ul>
+                <button class="sign-button"> Sign Up</button>
+            </div>
+
+
+
+            <div class="contain-plan" id="second-contain">
+                <ul class="text">
+                    <p>Why Us</p>
+                    <li>Tutorials by industry experts</li>
+                    <li>Peer &amp; expert code review</li>
+                    <li>Coding exercises</li>
+                    <li>Access to our GitHub repos</li>
+                    <li>Community forum</li>
+                    <li>Flashcard decks</li>
+                    <li>New videos every week</li>
+                </ul>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

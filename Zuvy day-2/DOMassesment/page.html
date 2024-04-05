@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <h1>Filterable Gallery</h1>
+    <h3>Add Product</h3>
+    <label>Enter image URL</label>
+    <input type="text" id="urlInput" placeholder="Enter image URL">
+    <button class="add1" onclick="addImage()">Add</button>
+    <label>Select Type</label>
+    <select id="typeInput">
+        <option value="Headphone">Headphone</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Mobile">Mobile</option>
+    </select>
+    <br><br>
+    <button class="add" onclick="filterProducts('All')">All</button>
+    <button class="add" onclick="filterProducts('Headphone')">Headphone</button>
+    <button class="add" onclick="filterProducts('Laptop')">Laptop</button>
+    <button class="add" onclick="filterProducts('Mobile')">Mobile</button>
+    <div id="productList"></div>
+    <script src="page.js"></script> 
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(15, 195, 240);
+}
+
+h1, h3 {
+    background-color: blue;
+    text-align: center;
+}
+
+.add1 {
+    background-color: rgb(9, 187, 53);
+    height: 30px;
+    width: 50px;
+}
+
+.add {
+    background-color: rgb(226, 139, 9);
+    border-radius: 10%;
+    height: 30px;
+}
+
+input,select {
+    border-radius: 8%;
+    height: 20px;
+    width: 180px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color-white: #fff;
+            --second-color: #ccc; /* Define a grayish color */
+            --first-shadow-color: #888; /* Adjust shadow color */
+        }
+
+        .project-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 30%;
+            height: 250px;
+            background: var(--second-color); /* Use the grayish color here */
+            border-radius: 20px;
+            box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+            overflow: hidden;
+        }
+
+        .project-box>i {
+            font-size: 50px;
+            color: #00B5E7;
+            margin-bottom: 25px;
+        }
+
+        .project-box label {
+            font-size: 15px;
+            color: #777;
+        }
+
+        .project-box::after,
+        .contact-info::after {
+            content: "";
+            position: absolute;
+            bottom: -100%;
+            background: var(--color-white);
+            width: 100%;
+            height: 100%;
+            transition: .4s;
+            z-index: 1;
+        }
+
+        .project-box:hover.project-box::after,
+        .contact-info:hover.contact-info::after {
+            bottom: 0;
+        }
+
+        .project-box:hover.project-box i,
+        .project-box:hover.project-box>h3,
+        .project-box:hover.project-box>label {
+            color: var(--color-white);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-container">
+        <div class="project-box">
+            <i class="uil uil-briefcase-alt"></i>
+            <h3>Digital Clock</h3>
+            <label>HTML, CSS, JavaScript</label>
+        </div>
+        <div class="project-box">
+            <i class="uil uil-award"></i>
+            <h3>QR Generator</h3>
+            <label>HTML, CSS, JavaScript</label>
+        </div>
+        <div class="project-box">
+            <i class="uil uil-award"></i>
+            <h3>Search Filetr</h3>
+            <label>ReactJS</label>
+        </div>
+      </div><br />
+      <div class="project-container">
+        <div class="project-box">
+            <i class="uil uil-briefcase-alt"></i>
+            <h3>Food Menu</h3>
+            <label>HTML, CSS, JavaScript, ReactJS</label>
+        </div>
+        <div class="project-box">
+            <i class="uil uil-award"></i>
+            <h3>ATM</h3>
+            <label> Python</label>
+        </div>
+        <div class="project-box">
+            <i class="uil uil-award"></i>
+            <h3>Crud Operation</h3>
+            <label>JavaScript</label>
+        </div>
+</body>
+</html>
