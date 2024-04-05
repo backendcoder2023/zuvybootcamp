@@ -1,0 +1,62 @@
+we can add files in to ways 
+1 relative path <the whole path>
+2 absolut file <only the path>
+
+BASIC CSS
+how to add css in your file 
+inline- style atribute
+internal- using style tage
+external-using css file 
+by using link tag 
+rel= relation
+href=location(hypertext reference)
+# == pam selector 
+if you are using two images and in that  you are 
+using alts image 1 and 2 but you can only use 
+alt also 
+to give size to the font we should use px, rem, em;
+rem is relative to root element 
+am is related to parent element 
+whaever comes in top it becomes root element 
+while writing font-family we should write a 
+backup font incase if the first font didnt 
+work then the other one will load 
+the gap between content and border is called 
+padding 
+ the gap between border and out side area is 
+called margine        
+
+1st specific element is element selector
+2nd is class 
+3rd atrubute seselectorlector
+4th  
+
+if you will use important key word then it will 
+give the first preference to the importance
+
+id takes much preference than class 
+agar dono hi class hi hai then first priority will take 
+niche vala class 
+
+first preference inline css ko hoti hai 
+then internal and then extarnal 
+
+desendant selector needs one space btn grandperents and 
+grandchild just need one space 
+
+postion me jo values rehti hai vo by default static hi rehta hai 
+
+fixed dhit hota hai nahi hile ga 
+sticky parent se chipka rahega
+
+p tag starts on new line
+ but span element starts on the same line 
+in p element width and height doesnt work 
+and on p tag it works 
+
+display is default value 
+
+float propery = allows us to wrap text around 
+always put value same as float of clear 
+
+ justify use to take all the plase of the content
